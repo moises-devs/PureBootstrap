@@ -1,0 +1,73 @@
+
+.text-color {
+    color:orangered;
+}
+
+/* sidebar */
+
+.sidebar-nav{
+    height:100vh;
+    background: linear-gradient(to bottom, rgba(6, 4, 4, 0.862), rgba(19, 46, 23, 0.723)), url('https://assets.euromoneydigital.com/dims4/default/8c7660d/2147483647/strip/true/crop/800x533+0+0/resize/840x560!/quality/90/?url=http%3A%2F%2Feuromoney-brightspot.s3.amazonaws.com%2F48%2F49%2Fcc89430aa3e573931dbae88e1f5a%2Fstock-exchange.jpeg') no-repeat left center;
+    background-size: cover;
+}
+.bottom-border {
+    border-bottom: .2rem ridge white;
+}
+.round-link {
+    border-radius: 2.5rem;
+    transition: all .2s;
+}
+.nav-item {
+    width:100%;
+    margin: .5rem;
+}
+.nav-item:hover{
+    background-color: rgb(114, 114, 114)
+}
+.current {
+    background-color: orangered;
+    box-shadow: 2px 5px 10px rgba(255,255,255,0.3);
+    transition: all .2s;
+}
+.current:hover {
+    background-color: orangered;
+    box-shadow: 2px 5px 10px rgba(255,255,255,0.3);
+    transform: translateY(1px);
+}
+
+/*end of sidebar */
+
+/*top-nav */
+#search {
+    border:none;
+    border-bottom:1px solid white;
+    background: transparent;
+    outline:none;
+    color:white;
+    transition: all .2s;
+}
+#search:focus {
+    box-shadow: none;
+    border-bottom-color:orangered;
+}
+#search-btn {
+    border-radius: 50%;
+    font-size:1.1rem;
+}
+
+/*end of top-nav */
+
+.task-item {
+    border-left:.2rem solid orangered;
+}
+
+@media (max-width:768px){
+    .sidebar-nav{
+        position:static;
+        height:auto;
+    }
+    .nav-top {
+        position:static;
+        height:auto;
+    }
+}
