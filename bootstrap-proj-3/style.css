@@ -1,0 +1,353 @@
+/* utilities */
+:root {
+    --drkGreen: rgb(40, 54, 24);
+    --litGreen: rgb(96, 108, 56);
+    --cream:rgb(254, 250, 224);
+    --litBrown:rgb(221, 161, 94);
+    --caramel:rgb(188, 108, 37);
+}
+.drk-green {
+    color:var(--drkGreen);
+}
+.cream-color {
+    color:var(--cream);
+}
+.max-sec{
+    max-width:1600px;
+}
+
+/*end of utilities */
+
+/*navbar */
+
+.nav-animate {
+    animation-name: nav-anim;
+    animation-duration: .2s;
+    
+}
+.navbar-custom {
+    background: linear-gradient(to bottom, rgb(40, 54, 24),rgba(40, 54, 24, 0.941));
+    transition: all .3s;
+    padding:30px;
+}
+.navbar-padding {
+    padding:15px;
+}
+.nav-link {
+    display:inline-block;
+}
+.cream
+{
+    color:var(--cream);
+    border-bottom:.2rem solid transparent;
+}
+.nav-active {
+    border-bottom: .2rem solid var(--litGreen);
+}
+.cream:hover{
+    border-color: var(--litGreen);
+    color:var(--cream);
+}
+.cream:visited {
+    text-decoration: none;
+    color:var(--cream);
+}
+
+.brand {
+    color:var(--cream);
+}
+.brand:hover #brand-x {
+    color:var(--litBrown);
+    transform: translateX(1px);
+}
+
+#brand-x {
+    transition: all .2s;
+    display:inline-block;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(254, 250, 224)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-toggler:focus{
+    border-color: var(--cream);
+    box-shadow:none;
+}
+/*end of navbar*/
+
+/*banner */
+.banner {
+    height:100vh;
+    background: url('https://images.pexels.com/photos/1096969/pexels-photo-1096969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size:cover;
+    background-position: right;
+    max-width: 100%;
+}
+.banner-text {
+    position:absolute;
+    top:25%;
+    left:10%;
+    color:var(--cream);
+    width:50%;
+    animation-name: ban-anim-top-bottom;
+    animation-duration: .5s;
+}
+.banner-detail {
+    color:var(--cream);
+    animation-name: ban-anim;
+    animation-duration: .5s;
+}
+
+/*end of banner */
+/*mission page */
+
+.mission  {
+    height:auto;
+    background: white;
+}
+
+
+.col h2 {
+    display:inline-block;
+    border-bottom: .2rem solid var(--litBrown);
+    
+}
+.cam {
+    opacity:0;
+}
+.camera {
+    opacity:1;
+    animation-name: from-left;
+    animation-duration: .8s;
+}
+
+.cam-text {
+    opacity: 0;
+}
+.cam-text-anim {
+    opacity:1;
+    animation-name: from-right;
+    animation-duration: .8s;
+}
+
+/*end of mission page*/
+
+/* collection */
+
+.collection {
+    background: var(--drkGreen);   
+}
+.card-heading {
+    background:  rgba(40, 54, 24, 0.684);
+    color:white;
+    transition: all .2s;
+}
+.card-heading:hover {
+    background:  rgb(40, 54, 24);
+}
+/*end of collection */
+
+/*gallery*/
+.nav-pills .tab-color {
+    background-color:var(--drkGreen);
+    color:var(--cream);
+    margin: 0 .1rem;
+    transition: all .3s;
+}
+.nav-pills .nav-link.active {
+    background-color: var(--caramel);
+}
+.tab-pane {
+    transition: all .2s;
+}
+
+/*end of gallery */
+/*customers */
+
+.customer {
+    background-color: var(--litGreen);
+}
+.carousel-img {
+    background-size: cover;
+    max-width:70%;
+}
+/*end of customers */
+
+/*pricing */
+.cta-price {
+    background-color: var(--caramel);
+    color:white;
+    border-radius:.8rem;
+}
+
+.pricing .card {
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.price-card-1,
+.price-card-2,
+.price-card-3 {
+    opacity:0;
+}
+
+.price-card-anim-1 {
+    opacity: 1;
+    animation: from-left .8s;
+}
+.price-card-anim-2 {
+    opacity: 1;
+    animation: from-right .8s;
+}
+.price-card-anim-3 {
+    opacity:1;
+    animation: from-below .8s;
+}
+.card-img {
+    
+}
+/*end of pricing */
+
+/* contact */
+
+.contact {
+    background: linear-gradient(105deg, rgba(0, 0, 0, 0.3) 0%, rgba(23, 83, 1, 0.3) 50%, transparent 50%),
+    url('https://photographylife.com/wp-content/uploads/2017/01/Landscape-photo-with-small-aperture-setting.jpg');
+    background-size: cover;
+    background-position: left; 
+
+}
+
+.contact form {
+    width:60%;
+    margin: 0 auto;
+}
+.contact .form-control {
+    box-shadow: none;
+    border:none;
+    border-bottom: .3rem solid black;
+    transition: all .3s;
+}
+
+.contact .form-control:focus {
+    border-bottom: .3rem solid var(--caramel);
+}
+
+.form-check-input:checked {
+    background-color: var(--caramel);
+    border-color:var(--cream);
+}
+.form-check-input:focus {
+    box-shadow: none;
+}
+.submit-btn {
+    margin: 2rem 0;
+    display:block;
+    background-color: var(--caramel);
+    outline:none;
+    border:none;
+    width:100%;
+    transition: all .2s;
+}
+
+.submit-btn:hover {
+    background-color: white;
+    color:var(--drkGreen);
+}
+
+/*end of contact */
+/*footer */
+
+#btn-sign-up {
+    background-color: var(--caramel);
+    color:white;
+    transition: all .2s;
+}
+
+#btn-sign-up:hover {
+    border:.2rem solid white;
+}
+
+/*end of footer*/
+/* animations */
+
+@keyframes from-right {
+    0% {
+        transform: translate(1000px);
+    }
+    100% {
+        transform: translate(0%);
+    }
+}
+
+
+@keyframes ban-anim {
+    0% {
+        transform: translate(-500px);
+    }
+    100% {
+        transform: translate(0%);
+    }
+    
+}
+@keyframes from-below {
+    0% {
+        transform: translateY(1000px);
+    }
+    100% {
+        transform: translate(0%);
+    }
+    
+}
+
+@keyframes nav-anim {
+    0% {
+        transform:translateY(-100px);
+    }
+    100% {
+        transform:translate(0%);
+    }
+}
+
+
+@keyframes from-left {
+    0% {
+        transform: translate(-500px);
+    }
+    100% {
+        transform: translate(0%);
+    }
+}
+
+
+@keyframes ban-anim-top-bottom {
+    0% {
+        transform: translateY(-200px);
+    }
+    100% {
+        transform:translate(0%);
+    }
+}
+
+/*end of animations */
+/*media queries */
+
+@media (min-width:1100px) {
+    .banner-text {
+        top:50%;
+        left:10%;
+        animation-name: ban-anim;
+        animation-duration: .9s;
+    }
+    .camera {
+        width:350px;
+    }
+    .pricing .price-card-1,
+    .pricing .price-card-3 {
+        width:70%;
+    }
+    
+}
+
+/*end of media queries */
+
