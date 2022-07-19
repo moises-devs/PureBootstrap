@@ -1,8 +1,8 @@
-const navBtn = document.querySelector('.navbar button');
+const navBtn = document.querySelector('#menu-btn');
 const navbar = document.querySelector('.navbar-custom');
 const camera = document.querySelector('.cam');
 const cameraText = document.querySelector('.cam-text');
-const navId = document.getElementById('navNav');
+const navId = document.getElementById('navMenu');
 const leftCard = document.querySelector('.price-card-1');
 const rightCard = document.querySelector('.price-card-3');
 const middleCard = document.querySelector('.price-card-2');
@@ -25,7 +25,7 @@ window.addEventListener('scroll', () => {
         camera.classList.remove('camera');
         cameraText.classList.remove('cam-text-anim')
     }
-    if (window.scrollY >= 4500) {
+    if (window.scrollY >= 4700) {
         leftCard.classList.add('price-card-anim-1');
         rightCard.classList.add('price-card-anim-2');
         middleCard.classList.add('price-card-anim-3');
@@ -40,5 +40,5 @@ window.addEventListener('scroll', () => {
 });
 
 navBtn.addEventListener('click', () => {
-    navId.classList.add('nav-animate');
+    navId.classList.toggle('nav-animate');
 });

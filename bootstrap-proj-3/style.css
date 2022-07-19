@@ -6,6 +6,10 @@
     --litBrown:rgb(221, 161, 94);
     --caramel:rgb(188, 108, 37);
 }
+html {
+    scroll-behavior: smooth;
+}
+
 .drk-green {
     color:var(--drkGreen);
 }
@@ -20,6 +24,7 @@
 
 /*navbar */
 
+
 .nav-animate {
     animation-name: nav-anim;
     animation-duration: .2s;
@@ -33,9 +38,7 @@
 .navbar-padding {
     padding:15px;
 }
-.nav-link {
-    display:inline-block;
-}
+
 .cream
 {
     color:var(--cream);
@@ -43,6 +46,9 @@
 }
 .nav-active {
     border-bottom: .2rem solid var(--litGreen);
+}
+.nav-link {
+    display:inline-block;
 }
 .cream:hover{
     border-color: var(--litGreen);
@@ -73,6 +79,7 @@
     border-color: var(--cream);
     box-shadow:none;
 }
+
 /*end of navbar*/
 
 /*banner */
@@ -203,9 +210,7 @@
     opacity:1;
     animation: from-below .8s;
 }
-.card-img {
-    
-}
+
 /*end of pricing */
 
 /* contact */
@@ -215,7 +220,6 @@
     url('https://photographylife.com/wp-content/uploads/2017/01/Landscape-photo-with-small-aperture-setting.jpg');
     background-size: cover;
     background-position: left; 
-
 }
 
 .contact form {
@@ -258,6 +262,7 @@
 /*end of contact */
 /*footer */
 
+
 #btn-sign-up {
     background-color: var(--caramel);
     color:white;
@@ -267,7 +272,10 @@
 #btn-sign-up:hover {
     border:.2rem solid white;
 }
-
+footer .footer-rw {
+    display:flex;
+    align-items: center;
+}
 /*end of footer*/
 /* animations */
 
